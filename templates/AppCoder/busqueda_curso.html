@@ -1,0 +1,14 @@
+{%extends "base.html"%}
+{%block contenido_cambia%}
+    {%if cursos %}   {#si en cursos tengo algo#}
+        {%for curso in cursos%}
+            <p>{{ curso }} </p>
+        
+        
+        {%endfor%}
+    
+    {%else%}  
+        <h3>No hay cursos filtrados</h3>
+
+    {%endif%}
+{%endblock%}
